@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg-mobile.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+    max-width: 700px;
+}
+
+.header {
+    background-color:  hsl(228, 56%, 26%);
+    padding: 3em;
+    width: 90%;
+    border-radius: 10px;
+    border-top-right-radius: 7em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+li {
+    background-color: hsl(229, 57%, 11%);
+    padding: 0.85em;
+    border-radius: 10px;
+    height: 3em;
+   
+}
+
+.progres {
+    width: 90%;
+    background-color: hsl(228, 56%, 26%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 10px;
+    padding: 2em 1em 0 1em;
+    height: 190px;
+}
+
+.top {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.top span {
+    opacity: 1;
+}
+
+.bar {
+    width: 90%;
+    height: 1.3em;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 1em;
+    margin: 0 auto;
+}
+.used {
+    position: relative;
+    top: 0.15em;
+    left: 0.15em;
+    height: 1em;
+    background-image: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 75%;
+    border-radius: 10px;
+}
+
+.ball {
+    height: 0.7em;
+    width: 0.7em;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 0.15em;
+    margin-left: auto;
+    margin-right: 0.15em;
+    
+
+}
+
+span {
+    font-weight: 700;
+}
+
+.masura {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.masura p {
+    margin-top: 0.5em;
+    opacity: 0.8;
+    font-size: 0.7rem;
+}
+
+.gb-left {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+
+.gb-left-container {
+    position: relative;
+    bottom: -20px;
+}
+
+.big-font {
+    font-size: 3em;
+    margin: 0;
+    opacity: 0.9;
+}
+.opacity {
+    opacity: 0.5;
+}
+
+@media (min-width: 800px) {
+    body {
+        background: url(./images/bg-desktop.png)  bottom no-repeat;
+        background-size: 100% 50%;
+        background-color: hsl(229, 57%, 11%);
+
+    }
+    .container {
+        flex-direction: row;
+        max-width: 1000px;
+        gap: 2em;
+    }
+
+    .header {
+        max-width: 400px;
+    }
+
+    .progres {
+        align-self: flex-end;
+        height: 160px;
+       
+    }
+
+    .top {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .gb-left {
+        top: -165px;
+        margin: 0 0 0 auto; 
+        border-bottom-right-radius: 0;
+    }
+
+    .gb-left-container {
+        top: -165px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 2em;
+    }
+
+    .codita {
+        height: 1.5em;
+        width: 1.5em;
+        margin: -1px 0 0.5em auto;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+      
+    }
+
+
+}
