@@ -145,7 +145,7 @@ span {
     opacity: 0.5;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
     body {
         background: url(./images/bg-desktop.png)  bottom no-repeat;
         background-size: 100% 50%;
